@@ -28,8 +28,5 @@ public class User {
 		return "User [id=" + id + ", name=" + name + ", job=" + job + "]";
 	}
 
-	public User(){
-		
-	}
 }
  
