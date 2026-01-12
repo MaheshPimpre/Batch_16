@@ -34,7 +34,7 @@ public class ReqresTest {
 	}
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 0)
 	void testGetAllUsers() {
 			
 			Response res = UserEndPoint.getUsersDetails(2);
