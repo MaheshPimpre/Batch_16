@@ -1,5 +1,7 @@
 package com.entity;
 
+import java.util.Objects;
+
 public class User {
 
 	private int id;
@@ -36,6 +38,21 @@ public class User {
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, job, name);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		User other = (User) obj;
+		return id == other.id && Objects.equals(job, other.job) && Objects.equals(name, other.name);
 	}
 
 	
