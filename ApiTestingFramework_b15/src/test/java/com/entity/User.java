@@ -27,6 +27,17 @@ public class User {
 	public String toString() {
 		return "User [id=" + id + ", name=" + name + ", job=" + job + "]";
 	}
+	public User(int id, String name, String job) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.job = job;
+	}
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
+	
 }
  
